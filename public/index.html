@@ -52,7 +52,9 @@
               <!--<form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
                 <button class="btn btn-outline-success my-2 my-sm-0 botones" type="submit" id="btn-registrarse">Iniciar sesion</button>&nbsp&nbsp&nbsp&nbsp
-                <button class="btn btn-outline-success my-2 my-sm-0 botones" type="submit" id="btn-registrar-usuario" onclick="" data-toggle="modal" data-target="#myModal">Registrarse</button>
+                <button class="btn btn-outline-success my-2 my-sm-0 botones" type="submit" id="btn-registrar-usuario" onclick="">
+                  <a href="register.html">Registrarse</a>
+                </button>
 
               <!--</form>-->
             </div>
@@ -240,112 +242,7 @@
 
 
 
-  <!-- The Modal -->
-  <div class="modal fade" id="myModal" data-backdrop="static"  style="background-color: rgba(255,255,255,0.6);">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content" style="background-color: transparent;">
-        <!-- CUERPO DE LA MODAL -->
-        <div class="modal-body  container-register">
-          <div class="row">
-            <div class="col-md-7 col-lg-7">
-              <hr>
-              <h1 class="tituloMediano margenes colorBlanco centrar">Crea <span class="colorNaranja">tú cuenta</span> ahora!</h1>
-            </div>
-            <div class="col-md-5 col-lg-5"></div>
-          </div>
-
-
-          <!---------------------------------------------------------->
-          <div class="row divContenido">
-            <div class="col-md-7 col-lg-7">
-              <span class="iconosMasPequeños"><i class="fas fa-user"></i></span>
-              <input type="text" name="txt-nombre" id="txt-nombre" placeholder="Nombre" class="input" onKeyPress="return ValidateAlpha(event);">
-            </div>
-            <div class="col-md-5 col-lg-5 divError" id="div-error-txt-nombre" style="display: none">
-              Campo requerrido
-            </div>
-          </div>
-          
-          <!---------------------------------------------------------->
-          <div class="row  divContenido">
-            <div class="col-md-7 col-lg-7">
-              <span class="iconosMasPequeños"><i class="fas fa-user"></i></span>
-              <input type="text" name="txt-apellido" id="txt-apellido" placeholder="Apellido" class="input" onKeyPress="return ValidateAlpha(event);">
-            </div>
-            <div class="col-md-5 col-lg-5 divError" id="div-error-txt-apellido" style="display: none">
-              Campo requerrido
-            </div>
-          </div>
-
-          <!---------------------------------------------------------->
-          <div class="row divContenido">
-            <div class="col-md-7 col-lg-7">
-              <span class="iconosMasPequeños"><i class="fas fa-envelope"></i></span>
-              <input type="mail" name="txt-correo" id="txt-correo" placeholder="Correo" onkeypress="verificarCorreo();" class="input">
-            </div>
-            <div class="col-md-5 col-lg-5 divError" id="div-error-txt-correo" style="display: none">
-              Campo requerrido
-            </div>
-          </div>
-
-          <!---------------------------------------------------------->
-          <div class="row divContenido">
-            <div class="col-md-7 col-lg-7">
-              <span class="iconosMasPequeños"><i class="fas fa-unlock-alt"></i></span>
-              <input type="password" name="txt-contrasenia" id="txt-contrasenia" placeholder="Ingrese su contraseña" class="input" onkeyup="verificarContrasenia();">
-            </div>
-            <div class="col-md-5 col-lg-5 divError" id="div-error-txt-contrasenia" style="display: none">Campo requerrido
-            </div>
-          </div>
-
-          <!---------------------------------------------------------->
-          <div class="row divContenido">
-            <div class="col-md-7 col-lg-7">
-              <span class="iconosMasPequeños"><i class="fas fa-unlock-alt"></i></span>
-              <input type="password" name="txt-passowrd-verificada" id="txt-contrasenia-verificada" placeholder="Ingrese su contraseña de nuevo" class="input">
-            </div>
-            <div class="col-md-5 col-lg-5 divError" id="div-error-txt-contrasenia-verificada" style="display: none">
-                  Campo requerrido
-            </div>
-          </div>
-
-          <!---------------------------------------------------------->
-          <div class="row divContenido">
-            <div class="col-md-7 col-lg-7">
-              <br>
-              <button name="btn-registrar" id="btn-registrar" class="registroLogin tituloMuyPequeño centrar" onclick="registrarUsuario();">
-                Regístrate
-              </button>
-              <br>
-            </div>            
-          </div>
-          <!-------------------------------------------------------------------->
-          
-
-
-
-
-          
-          
-
-
-          
-
-          <!-------------------------------------------------------------------->
-          <div class="row">
-            
-          </div>
-        </div>
-        <!-- FIN DEL CUERPO DE LA MODAL -->
-        
-        <!-- Modal footer -->
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary botones" data-dismiss="modal">Close</button>
-        </div>
-        
-      </div>
-    </div>
-  </div>
+  
 
 
 <script src="JS/aos.js"></script>

@@ -12,9 +12,11 @@ html {
 	
 }
 
-body {
-	font-family: montserrat, arial, verdana;
-}
+body{
+        background-image: url(../img/img2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
 /*form styles*/
 #msform {
 	width: 500px;
