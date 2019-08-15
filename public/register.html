@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="CSS/register.css">
+    <link rel="stylesheet" type="text/css" href="CSS/styles.css">
+    <link rel="stylesheet" href="CSS/fontawesome.min.css" />
+    <link rel="stylesheet" href="CSS/brands.min.css">
+    <link rel="stylesheet" href="CSS/solid.min.css">
+    <style>
+      body{
+        background-image: url(img/img2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    </style>
+</head>
+<body>
+
+<!--BARRA DE NAVEGACION-->
+       <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbarInformation">
+            <a class="navbar-brand logotipo" href="#" style="font-family:fuente;font-weight: bold;font-size: 22px">
+              Keoki
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" 
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
+                    aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" 
+                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+              <!--<form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+                <button class="btn btn-outline-success my-2 my-sm-0 botones" type="submit" id="btn-registrarse">Iniciar sesion</button>&nbsp&nbsp&nbsp&nbsp
+                <button class="btn btn-outline-success my-2 my-sm-0 botones" type="submit" id="btn-registrar-usuario" onclick="" data-toggle="modal" data-target="#myModal">Registrarse</button>
+
+              <!--</form>-->
+            </div>
+            <hr>
+        </nav> 
+
+    <!--FIN DE LA BARRA DE NAVEGACION-->
+
+
+
+<form id="msform">
+  <!-- progressbar -->
+  <ul id="progressbar">
+    <li class="active" id="informacion">Informacion</li>
+    <li id="contrasenia">Contraseña</li>
+  </ul>
+  <!-- fieldsets -->
+  <fieldset id="paso1">
+    <h2 class="fs-title"></h2>
+    <p class="tituloPequeño">CREA <span class="colorNaranja">TÚ CUENTA</span> AHORA!</p>
+    <p class="tituloMuyPequeño" style="margin-top: -20px">Paso 1</p><br>
+    <div class="container" style="margin-top: -25px;padding:10px;">
+      <div>
+        <input type="text" id="txt-nombre" placeholder="Nombre" onKeyPress="return ValidateAlpha(event);" value="Lizzul">
+        <div id="div-error-txt-nombre" style="display: none;margin-top: -100px">
+          <span  class="divError">Campo requerrido</span>
+        </div>
+      </div>
+      <div>
+        <input type="text" id="txt-apellido" placeholder="Apellido" onKeyPress="return ValidateAlpha(event);" value="Gabriela">
+        <div class="divError" id="div-error-txt-apellido" style="display: none">
+          Campo requerrido
+        </div>
+      </div>
+      <div>
+        <input type="text" id="txt-correo" placeholder="Correo" onkeypress="verificarCorreo();" value="liizz@gmail.com">
+        <div class="divError" id="div-error-txt-correo" style="display: none">
+          Campo requerrido
+        </div>
+      </div>
+    </div>
+    <input type="button" onclick="validarInformacion()" class="action-button" value="Siguiente" />
+  </fieldset>
+  <fieldset id="paso2">
+    <p class="tituloPequeño">Ya casi <span class="colorNaranja">finalizamos</span>!</p>
+    <p class="tituloMuyPequeño" style="margin-top: -20px">Paso 2</p><br>
+    
+    <div style="margin-top: -25px;">
+      <div>
+        <strong>La contraseña debe contener:</strong><br> Numeros, letras (Mayusculas y Minusculas) y caracteres especiales.
+      </div><br>
+       <div>
+          <input type="password" name="txt-contrasenia" id="txt-contrasenia" placeholder="Ingrese su contraseña" onkeyup="verificarContrasenia();">
+          <div class=" divError" id="div-error-txt-contrasenia" style="display: none">Campo requerrido</div>
+      </div>
+      <div>
+          <input type="password" name="txt-password-verificada" id="txt-contrasenia-verificada" placeholder="Ingrese su contraseña de nuevo">
+          <div class="divError" id="div-error-txt-contrasenia-verificada" style="display: none">Campo requerrido</div>
+      </div>
+      <input type="button" onclick="mostrarPaso1()" class="action-button" value="Anterior" />
+      <input type="button" onclick="registrar()" class="action-button" value="Registrar" />
+    </div>
+    
+  </fieldset>
+</form>
+</body>
+    <script type="text/javascript" src="JS/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="JS/bootstrap.min.js"></script>
+    <script type="text/javascript" src="JS/fontawesome.min.js"></script>
+    <script src="JS/register.js"></script>
+    <script>
+      
+      /*function validarInformacion(){
+
+        $("#paso1").hide();
+        $("#informacion").removeClass("active");
+        $("#contrasenia").addClass("active");
+        $("#paso2").show();
+      }*/
+      
+    </script>
+
+</html>
