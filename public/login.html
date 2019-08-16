@@ -17,8 +17,8 @@
 
 <!--BARRA DE NAVEGACION-->
        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbarInformation">
-            <a class="navbar-brand logotipo" href="#" style="font-family:fuente;font-weight: bold;font-size: 22px">
-              Keoki
+            <a class="navbar-brand logotipo" href="index.html">
+              <img src="img/keoki.svg" style="width: 100%" class="img-fluid">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" 
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
@@ -52,8 +52,12 @@
               </ul>
               <!--<form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
-                <button class="btn btn-outline-success my-2 my-sm-0 botones" type="submit" id="btn-registrarse">Iniciar sesion</button>&nbsp&nbsp&nbsp&nbsp
-                <button class="btn btn-outline-success my-2 my-sm-0 botones" type="submit" id="btn-registrar-usuario" onclick="" data-toggle="modal" data-target="#myModal">Registrarse</button>
+                <button class="btn btn-outline-success my-2 my-sm-0 action-button" type="button" id="btn-registrarse">
+                  <a href="login.html">Iniciar sesion</a>
+                </button>&nbsp&nbsp&nbsp&nbsp
+                <button class="btn btn-outline-success my-2 my-sm-0 action-button" type="button" id="btn-registrar-usuario">
+                  <a href="register.html">Registrarse</a>
+                </button>
 
               <!--</form>-->
             </div>
@@ -72,17 +76,15 @@
     <h2 class="fs-title"></h2>
     <p class="tituloPequeño"><span class="colorNaranja">Iniciar</span> sesión!</p>
     <div class="container" style="margin-top: 5px;padding:10px;">
-     
-      
-      <div>
-        <input type="text" id="txt-correo" placeholder="Correo" onkeypress="verificarCorreo();" value="liizz@gmail.com">
+     <div>
         <div class="divError" id="div-error-txt-correo" style="display: none">
           Campo requerrido
         </div>
+        <input type="text" id="txt-correo" placeholder="Correo" onkeypress="verificarCorreo();" value="liizz@gmail.com">
       </div>
       <div>
-          <input type="password" name="txt-contrasenia" id="txt-contrasenia" placeholder="Ingrese su contraseña">
           <div class=" divError" id="div-error-txt-contrasenia" style="display: none">Campo requerrido</div>
+          <input type="password" name="txt-contrasenia" id="txt-contrasenia" placeholder="Ingrese su contraseña">
       </div>
 
 

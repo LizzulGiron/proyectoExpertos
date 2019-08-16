@@ -16,6 +16,12 @@ p {
   line-height: 24px;
 }
 
+.logotipo{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 .page-content {
   width: 77.5%;
   float: right;
@@ -935,6 +941,12 @@ header {
 /* Responsive Style */
 
 @media (max-width: 992px) {
+
+  .logotipo{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
   .responsive-nav {
     display: none;

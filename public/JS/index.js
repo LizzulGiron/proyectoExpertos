@@ -1,86 +1,41 @@
+(function (){
+    var tarjetas = [
+          {nombre:"JAVASCRIPT",icono:'<i class="fab fa-js-square"></i>',texto:"Javascript es un lenguaje utilizado por profesionales y para quienes se inician en el desarrollo y diseño de sitios web. No requiere de compilación ya que el lenguaje funciona del lado del cliente, los navegadores son los encargados de interpretar estos códigos."},
+          {nombre:"CSS3",icono:'<i class="fab fa-css3"></i>',texto:"CSS es un lenguaje de hojas de estilos creado para controlar el aspecto o presentación de los documentos electrónicos definidos con HTML y XHTML. CSS es la mejor forma de separar los contenidos y es imprescindible para crear páginas web."},
+          {nombre:"HTML5",icono:'<i class="fab fa-html5"></i>',texto:"HTML es un estándar que sirve de referencia del software que conecta con la elaboración de páginas web en sus diferentes versiones, define una estructura básica y un código para la definición de contenido de una página web, como texto, imágenes, videos, juegos."}
+          
+      ];
+      for (var i = 0; i < tarjetas.length; i++) {
+        document.getElementById('tarjetas').innerHTML += `
+        <div class="col-md-4 col-lg-4 col-sm-12" data-aos="zoom-out">
+            <div class="imagenesTarjeta text-center">
+              <span class="iconos">
+                  ${tarjetas[i].icono}
+              </span>
+              <p class="tituloPequeño centrar">${tarjetas[i].nombre}</p>
+              <p class="texto">
+                ${tarjetas[i].texto}
+              </p>
+            </div>
+        </div>`;}
+})();
 
-function ValidateAlpha(evt){
-    var keyCode = (evt.which) ? evt.which : evt.keyCode
-    if ((keyCode < 65 || keyCode > 90) && (keyCode < 97 || keyCode > 123) && keyCode != 32)return false;
-    return true;
-}
+(function (){
+    var registrosGaleria = [
+          {nombre:"Blog",url:"IMG/CATEGORIES/photo02.jpg",classAll:"all 2"},
+          {nombre:"Tienda en linea",url:"IMG/CATEGORIES/photo04.jpg",classAll:"all 1"},
+          {nombre:"Diseño",url:"IMG/CATEGORIES/photo05.jpg",classAll:"all 1"},
+          {nombre:"Fotografía",url:"IMG/CATEGORIES/photo06.jpg",classAll:"all 2"},
+          {nombre:"Viajes",url:"IMG/CATEGORIES/photo01.jpg",classAll:"all 2"},
+          {nombre:"Música",url:"IMG/CATEGORIES/photo03.jpg",classAll:"all 1"}
+      ];
+      for (var i = 0; i < registrosGaleria.length; i++) {
+        document.getElementById('gallery').innerHTML += `
+        <div class="mb-3 pics animation ${registrosGaleria[i].classAll}">
+          <span class="tituloMuyPequeño">${registrosGaleria[i].nombre}</span>
+          <img class="img-fluid" src="${registrosGaleria[i].url}" alt="Card image cap">
+        </div>`;}
+})();
 
-var inputs = ["txt-nombre", "txt-apellido", "txt-correo", "txt-contrasenia", "txt-contrasenia-verificada"];
 
-function registrarUsuario(){
-    $("#div-error-txt-correo").html("Campo requerido");
-    $("#div-error-txt-contasenia").html("Campo requerido");
-    for (var i = 0; i < inputs.length; i++) {
-        inputVacio(inputs[i]);
-        if (inputs[i]=='txt-correo' && (inputVacio(inputs[i])== true)) {
-            $("#div-error-txt-correo").html("Campo requerido");
-            verificarCorreo();
-        }
-        if (inputs[i]=='txt-contrasenia' && (inputVacio(inputs[i])== true)) {
-            $("#div-error-txt-contrasenia").html("Campo requerido");
-            verificarContrasenia();
-        }
-    }
-};
 
-function inputVacio(inputName){
-    var campo = "#"+inputName;
-    var input =$(campo).val();
-    if(input == '' || input == 'NULL'){
-        var error = "#div-error-"+inputName;
-        $(campo).addClass("classError");
-        $(error).css("display","inline");
-        return false;
-    }
-    else{
-        var error = "#div-error-"+inputName;
-        $(campo).removeClass("classError");
-        $(error).css("display","none");
-        return true;
-    }
-}
-
-function verificarCorreo(){
-    var regex = /[\w-\.]{2,}@([\w-]{2,}\.)*([\w-]{2,}\.)[\w-]{2,4}/;
-    if (!(regex.test($('#txt-correo').val().trim()))) {
-        console.log('El correo es invalido');
-        $("#div-error-txt-correo").html("Correo inválido");
-        $('#txt-correo').addClass("classError");
-        $("#div-error-txt-correo").css("display","inline");
-    }
-    else{
-        $("#div-error-txt-correo").css("display","none");
-    }
-}
-
-function verificarContrasenia(){
-   var contrasenia = $("#txt-contrasenia").val();
-    if(validar_clave(contrasenia) == true){
-        $("#txt-verificar-contrasenia").removeClass("classError");
-        $("#div-error-txt-contrasenia").css("display","none");
-     }
-     else{
-        console.log('La contraseña ingresada no es fuerte');
-        $("#div-error-txt-contrasenia").html("La contraseña ingresada no es fuerte");
-        $("#txt-verificar-contrasenia").addClass("classError");
-        $("#div-error-txt-contrasenia").css("display","inline");
-     }
-
-     function validar_clave(contrasenia){
-            if(contrasenia.length >= 8){ 
-                var mayuscula = false;
-                var minuscula = false;
-                var numero = false;
-                var caracter_raro = false;
-                for(var i = 0;i<contrasenia.length;i++){
-                    if(contrasenia.charCodeAt(i) >= 65 && contrasenia.charCodeAt(i) <= 90){mayuscula = true;}
-                    else if(contrasenia.charCodeAt(i) >= 97 && contrasenia.charCodeAt(i) <= 122)
-                    {minuscula = true;}
-                    else if(contrasenia.charCodeAt(i) >= 48 && contrasenia.charCodeAt(i) <= 57)
-                    {numero = true;}
-                    else{caracter_raro = true;}
-                }if(mayuscula == true && minuscula == true && caracter_raro == true && numero == true)
-                {return true;}
-            }
-                        return false;}
-};

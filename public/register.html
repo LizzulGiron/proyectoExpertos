@@ -17,8 +17,8 @@
 
 <!--BARRA DE NAVEGACION-->
        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbarInformation">
-            <a class="navbar-brand logotipo" href="#" style="font-family:fuente;font-weight: bold;font-size: 22px">
-              Keoki
+            <a class="navbar-brand logotipo" href="index.html">
+              <img src="img/keoki.svg" style="width: 130px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" 
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
@@ -52,8 +52,12 @@
               </ul>
               <!--<form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
-                <button class="btn btn-outline-success my-2 my-sm-0 botones" type="submit" id="btn-registrarse">Iniciar sesion</button>&nbsp&nbsp&nbsp&nbsp
-                <button class="btn btn-outline-success my-2 my-sm-0 botones" type="submit" id="btn-registrar-usuario" onclick="" data-toggle="modal" data-target="#myModal">Registrarse</button>
+                <button class="btn btn-outline-success my-2 my-sm-0 action-button" type="button" id="btn-registrarse">
+                  <a href="login.html">Iniciar sesion</a>
+                </button>&nbsp&nbsp&nbsp&nbsp
+                <button class="btn btn-outline-success my-2 my-sm-0 action-button" type="button" id="btn-registrar-usuario">
+                  <a href="register.html">Registrarse</a>
+                </button>
 
               <!--</form>-->
             </div>
@@ -77,22 +81,22 @@
     <p class="tituloMuyPequeño" style="margin-top: -20px">Paso 1</p><br>
     <div class="container" style="margin-top: -25px;padding:10px;">
       <div>
-        <input type="text" id="txt-nombre" placeholder="Nombre" onKeyPress="return ValidateAlpha(event);" value="Lizzul">
-        <div id="div-error-txt-nombre" style="display: none;margin-top: -100px">
-          <span  class="divError">Campo requerrido</span>
+        <div id="div-error-txt-nombre" style="display: none;margin-top: 60px" class="divError">
+          <span>Campo requerrido</span>
         </div>
+        <input type="text" id="txt-nombre" placeholder="Nombre" onKeyPress="return ValidateAlpha(event);" value="Lizzul">
       </div>
       <div>
-        <input type="text" id="txt-apellido" placeholder="Apellido" onKeyPress="return ValidateAlpha(event);" value="Gabriela">
         <div class="divError" id="div-error-txt-apellido" style="display: none">
           Campo requerrido
         </div>
+        <input type="text" id="txt-apellido" placeholder="Apellido" onKeyPress="return ValidateAlpha(event);" value="Gabriela">
       </div>
       <div>
-        <input type="text" id="txt-correo" placeholder="Correo" onkeypress="verificarCorreo();" value="liizz@gmail.com">
         <div class="divError" id="div-error-txt-correo" style="display: none">
           Campo requerrido
         </div>
+        <input type="text" id="txt-correo" placeholder="Correo" onkeypress="verificarCorreo();" value="liizz@gmail.com">
       </div>
     </div>
     <input type="button" onclick="validarInformacion()" class="action-button" value="Siguiente" />
@@ -101,17 +105,17 @@
     <p class="tituloPequeño">Ya casi <span class="colorNaranja">finalizamos</span>!</p>
     <p class="tituloMuyPequeño" style="margin-top: -20px">Paso 2</p><br>
     
-    <div style="margin-top: -25px;">
+    <div style="margin-top: -35px;">
       <div>
         <strong>La contraseña debe contener:</strong><br> Números, letras (Mayúsculas y Minúsculas) y caracteres especiales.
-      </div><br>
+      </div>
        <div>
-          <input type="password" name="txt-contrasenia" id="txt-contrasenia" placeholder="Ingrese su contraseña" onkeyup="verificarContrasenia();">
           <div class=" divError" id="div-error-txt-contrasenia" style="display: none">Campo requerrido</div>
+          <input type="password" name="txt-contrasenia" id="txt-contrasenia" placeholder="Ingrese su contraseña" onkeyup="verificarContrasenia();">
       </div>
       <div>
-          <input type="password" name="txt-password-verificada" id="txt-contrasenia-verificada" placeholder="Ingrese su contraseña de nuevo">
           <div class="divError" id="div-error-txt-contrasenia-verificada" style="display: none">Campo requerrido</div>
+          <input type="password" name="txt-password-verificada" id="txt-contrasenia-verificada" placeholder="Ingrese su contraseña de nuevo">
       </div>
       <input type="button" onclick="mostrarPaso1()" class="action-button" value="Anterior" />
       <input type="button" onclick="registrar()" class="action-button" value="Registrar" />
