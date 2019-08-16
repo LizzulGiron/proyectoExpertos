@@ -3,6 +3,7 @@
 <head>
   <title>KEOKI</title>
     <meta charset="utf-8">
+    <link rel="shortcut icon" href="img/favicon.ico">
     <link rel="stylesheet" type="text/css" href="CSS/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="CSS/index.css">
     <link rel="stylesheet" type="text/css" href="CSS/styles.css">
@@ -16,8 +17,8 @@
 
     <!--BARRA DE NAVEGACION-->
        <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="navbarInformation">
-            <a class="navbar-brand logotipo" href="#" style="font-family:fuente;font-weight: bold;font-size: 22px">
-              Keoki
+            <a class="navbar-brand logotipo" href="index.html">
+              <img src="img/keoki.svg" style="width: 130px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" 
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" 
@@ -51,8 +52,10 @@
               </ul>
               <!--<form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
-                <button class="btn btn-outline-success my-2 my-sm-0 botones" type="submit" id="btn-registrarse">Iniciar sesion</button>&nbsp&nbsp&nbsp&nbsp
-                <button class="btn btn-outline-success my-2 my-sm-0 botones" type="submit" id="btn-registrar-usuario" onclick="">
+                <button class="btn btn-outline-success my-2 my-sm-0 action-button" type="button" id="btn-registrarse">
+                  <a href="login.html">Iniciar sesion</a>
+                </button>&nbsp&nbsp&nbsp&nbsp
+                <button class="btn btn-outline-success my-2 my-sm-0 action-button" type="button" id="btn-registrar-usuario">
                   <a href="register.html">Registrarse</a>
                 </button>
 
@@ -171,13 +174,13 @@
       <div class="col-md-2 col-lg-3"></div>
       <div class="col-md-8 col-lg-6">
         <p class="informationBoletin tituloPequeño centrar" style="">
-          Calidad increíble y diseño impresionante
+          <span class="colorNaranja">Calidad</span> increíble y <span class="colorNaranja">diseño</span> impresionante
         </p>
         <p class="informationBoletin">
           Keoki te ofrece una manera rapida y sencilla de crear tu propio sitio web. Con tan solo un click comienza hoy a trabajar.
         </p>
         <p class="informationBoletin">
-          <button type="button" class="botones">Iniciar un proyecto ahora</button>
+          <button type="button" class="action-button">Iniciar un proyecto ahora</button>
         </p>
       </div>
       <div class="col-md-2 col-lg-3"></div>

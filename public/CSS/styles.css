@@ -64,10 +64,42 @@
   height: 100%;
 }
 
-.boton{
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 2px;
-  margin-right: 2px;
-  background-color: rgb(255,192,1);
+a {
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+a:hover {
+  color: black;
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.action-button {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  background: rgb(255,192,1);
+  color: black;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 5px 20px;
+  margin: 10px 5px;
+  border-radius: 5px;
+}
+
+.action-button:hover{
+  background: rgb(255,192,1);
+  font-weight: bold;
+  color: black;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 5px 20px;
+  margin: 10px 5px;
+  border-radius: 5px;
+}
+
+.bg-dark {
+    background-color: black!important;
 }
