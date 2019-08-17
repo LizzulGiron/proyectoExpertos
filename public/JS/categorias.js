@@ -48,6 +48,21 @@
                                 <a href="#contact">Comenzar ahora.</a>
                             </div>
                         </div>
+                        <div class="item">
+                            <div class="image">
+                                <img src="img/featured_1.jpg" alt="">
+                                <div class="featured-button button">
+                                    <a href="#projects">Editar</a>
+                                </div>
+                            </div>
+                            <div class="text-content">
+                                <h4>Nombre de la plantilla</h4>
+                                <span>00/00/0000</span>
+                            </div>
+                            <div class="accent-button button">
+                                <a href="#contact">Comenzar ahora.</a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </section>`;

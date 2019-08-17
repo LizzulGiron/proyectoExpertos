@@ -103,3 +103,11 @@ a:hover {
 .bg-dark {
     background-color: black!important;
 }
+
+.dropdown-menu{
+  background-color: black;
+}
+
+.dropdown-item{
+  color: rgb(255,192,1);
+}

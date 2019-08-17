@@ -17,7 +17,7 @@ p {
 }
 
 .logotipo{
-    width: 90%;
+    width: 70%;
     margin-left: auto;
     margin-right: auto;
   }
@@ -95,7 +95,7 @@ p {
 .accent-button a {
   font-size: 13px;
   font-weight: 600;
-  color: #fff;
+  color: #000;
   text-transform: capitalize;
   background-color: rgb(255,192,1);
   display: inline-block;
@@ -108,8 +108,8 @@ p {
 }
 
 .accent-button a:hover {
-  background-color: #fff;
-  color: rgb(255,192,1);
+  background-color: rgb(255,192,1);
+  color: #000;
 }
 
 header {
@@ -1092,4 +1092,28 @@ header {
   box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
   padding: 10px;
   background-color: red;
+}
+
+.action-button {
+  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
+  background: rgb(255,192,1);
+  color: black;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 5px 20px;
+  margin: 10px 5px;
+  border-radius: 5px;
+}
+
+.action-button:hover{
+  background: rgb(255,192,1);
+  font-weight: bold;
+  color: black;
+  border: 0 none;
+  border-radius: 1px;
+  cursor: pointer;
+  padding: 5px 20px;
+  margin: 10px 5px;
+  border-radius: 5px;
 }
