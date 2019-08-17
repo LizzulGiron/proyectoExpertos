@@ -28,7 +28,7 @@ p {
 }
 
 .content-section {
-  padding-top: 100px;
+  padding-top: -20px;
   margin-bottom: 50px;
   position: relative;
   width: 100%;
@@ -46,7 +46,7 @@ p {
 .section-heading {
   text-align: left;
   position: relative;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
 }
 
 .section-heading h1 {
@@ -537,6 +537,7 @@ header {
   text-align: left;
   position: relative;
   z-index: 10;
+  padding-top: -100px;
 }
 
 #projects .item .image {
@@ -1085,4 +1086,10 @@ header {
 
 .input{
   margin:5px;
+}
+
+.recuadro{
+  box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+  padding: 10px;
+  background-color: red;
 }

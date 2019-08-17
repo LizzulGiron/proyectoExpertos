@@ -37,5 +37,32 @@
         </div>`;}
 })();
 
+(function (){
+    var pagos = [
+          {nombre:"Gratis",precio:"$0",servicios : ["1 GB de espacio de almacenamiento","10 cuenta de correo","5 subdominios gratis","Soporte técnico 24/7"]},
+          {nombre:"Básico",precio:"$9.99",servicios : ["10 GB de espacio de almacenamiento","10 cuenta de correo","10 subdominios gratis","Soporte técnico 24/7"]},
+          {nombre:"Premiun",precio:"$15.99",servicios : ["40 GB de espacio de almacenamiento","30 cuenta de correo","20 subdominios gratis","Soporte técnico 24/7"]}
+          
+      ];
+      console.log(pagos);
+      for (var i = 0; i < pagos.length; i++) {
+        document.getElementById('pagos').innerHTML += `
+        <div class="col-md-4 col-lg-4 col-sm-12" data-aos="zoom-out">
+            <div class="imagenesTarjeta text-center">
+              <div style="background-color: #f4f4f4">
+                <p class="tituloMediano centrar colorNaranja" style="background-color: #f4f4f4">${pagos[i].nombre}</p>
+                <p ><span class="tituloPequeño">${pagos[i].precio}</span></p>
+              </div>
+              <div id="div-${pagos[i].nombre}"></div>
+              <button type="button" class="action-button">Registrarse</button>
+              </p>
+            </div>
+        </div>`;
+      var servicios = pagos[i].servicios;
+      for (var j = 0; j < servicios.length; j++) {
+        document.getElementById('div-'+pagos[i].nombre).innerHTML += `<p>${servicios[j]}</p>`;
+      }
+      }
+})();
 
 
