@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
     <head>
@@ -30,6 +31,7 @@
                 <nav>
                     <ul class="nav navbar-nav">
                         <li><a href="home.html">Mis sitios</a></li>
+                        <hr>
                         <li><a href="#negocios">Negocio</a></li>
                         <li><a href="#tienda">Tienda en línea</a></li>
                         <li><a href="#fotografia">Fotografía</a></li>
@@ -44,31 +46,90 @@
         </header>
 
         <div class="sidebar-navigation hidde-sm hidden-xs">
-            <nav>
+            <div class="logo">
+                <a href="index.html"><img src="img/keoki6.svg" class="logotipo"></a>
+            </div>
+            <nav><br><br><br>
                 <ul id="enlaces">
-                    <li>
-                        <button><span style="font-size: 100px;color"><i class="fab fa-js-square"></i></span></button>
-                    </li>
-                    
                     
                 </ul>
             </nav>
-            
         </div>
+        <div id="projects" class="page-content">
+            <div class="section-heading" style="margin-top: 20px;margin-bottom: 5px">
+                    <h1 class="tituloMediano">Administración <br><em>de usuarios</em></h1>
+                    <p >Qué deseas hacer hoy?. 
+                    <br>Elige una de nuestras plantillas.</p>
+            </div>
 
-        <script>
-            
-                
-        </script>
-        
+            <section id="usuarios" class="content-section">
+                <h1>Usuarios</h1>
+                <div style="margin: 200px">...</div>
+            </section>
 
 
+            <section id="archivos" class="content-section">
+                <h3 class="tituloGrande colorNaranja">Manejo de archivos</h3>
+                <div class="section-heading" style="width: 100%;">
+                    <select id="slc-archivos" class="form-control" onchange="mostrarArchivos()">
+                        <option>Archivos</option>
+                        <option value="imagenes">Imagenes</option>
+                        <option value="videos">Videos</option>
+                        <option value="archivosGenericos">Archivos genéricos</option>
+                    </select>
+                </div>
+                <div class="row" id="imagenes"></div>
+                <div class="row" id="videos"></div>
+                <div class="row" id="archivosGenericos"></div>
+            </section>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+            <section id="paginaPrincipal" class="content-section">
+                <h1>Editar pagina principal</h1>
+                <div style="margin: 200px">...</div>
+            </section>
+
+            <section id="crearPagina" class="content-section">
+                <h1>Creacion de paginas</h1>
+                <div style="margin: 200px">...</div>
+            </section>
+
+            <section id="entradas" class="content-section">
+                <h1>Entradas</h1>
+                <div style="margin: 200px">...</div>
+            </section>
+
+            <section id="comentarios" class="content-section">
+                <h1>Gestion de comentarios</h1>
+                <div style="margin: 200px">...</div>
+            </section>
+
+            <section id="incrustar" class="content-section">
+                <h1>Incrustar componentes</h1>
+                <div style="margin: 200px">...</div>
+            </section>
+
+            <section id="menusBreadcrumb" class="content-section">
+                <h1>Administrar el Menús y Breadcrumb </h1>
+                <div style="margin: 200px">...</div>
+            </section>
+
+            <section id="plantillas" class="content-section">
+                <h1>Administración de plantillas </h1>
+                <div style="margin: 200px">...</div>
+            </section>
+
+
+
+
+
+
+        </div>
         <div id="blog" class="page-content">
-            <div class="section-heading" style="margin-top: 20px;margin-bottom: -30px">
-                <h1 class="tituloGrande">Nuestras <br><em>Categorías</em></h1>
-                <p class="tituloMuyPequeño">Qué quieres hacer hoy?. 
-                <br>Elige una de nuestras plantillas.</p>
-            </div><br>  
+            <section class="footer">
+                <p>Copyright &copy; 2019. Design: Keoki.</p>
+            </section>
         </div>
 
 
@@ -112,8 +173,8 @@
     </script>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+    <script src="JS/admin.js"></script>
     <script type="text/javascript" src="JS/fontawesome.min.js"></script>
-    <script src="JS/dashboard.js"></script>
 
 </body>
 </html>

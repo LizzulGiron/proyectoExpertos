@@ -546,6 +546,7 @@ header {
 
 #projects .item .image img {
   width: 100%;
+  height: 200px;
   overflow: hidden;
 }
 
@@ -1094,26 +1095,13 @@ header {
   background-color: red;
 }
 
-.action-button {
-  font-family: "Avant Garde", Avantgarde, "Century Gothic", CenturyGothic, "AppleGothic", sans-serif;
-  background: rgb(255,192,1);
+.icono{
   color: black;
-  border: 0 none;
-  border-radius: 1px;
-  cursor: pointer;
-  padding: 5px 20px;
-  margin: 10px 5px;
-  border-radius: 5px;
-}
-
-.action-button:hover{
-  background: rgb(255,192,1);
-  font-weight: bold;
-  color: black;
-  border: 0 none;
-  border-radius: 1px;
-  cursor: pointer;
-  padding: 5px 20px;
-  margin: 10px 5px;
-  border-radius: 5px;
+  font-size: 20px;
+  padding-bottom: 7px;
+  background-color: #f4f4f4;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top:7px;
+  border-radius: 5px 5px 0px 0px;
 }
