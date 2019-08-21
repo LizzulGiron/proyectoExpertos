@@ -1,14 +1,12 @@
 //{codigo:"usuarios",titulo:"Usuarios"},
+
 (function(){
     var categorias = [
         {codigo:"archivos",titulo:"Archivos"},
         {codigo:"paginaPrincipal",titulo:"Página principal"},
-        {codigo:"crearPagina",titulo:"Creación de páginas"},
+        {codigo:"crearPagina",titulo:"Páginas"},
         {codigo:"entradas",titulo:"Entradas"},
-        {codigo:"comentarios",titulo:"Gestión de comentarios"},
-        {codigo:"incrustar",titulo:"Incrustar componentes"},
-        {codigo:"menusBreadcrumb",titulo:"Menús y Breadcrumb"},
-        {codigo:"plantillas",titulo:"Administración de plantillas"}
+        {codigo:"comentarios",titulo:"Comentarios"}
     ];
     console.log(categorias);
     for (var i = 0; i < categorias.length; i++) {
@@ -40,7 +38,7 @@ var videos = [
 (function(){
 	for (var i = 0; i < imagenes.length; i++) {
 		document.getElementById('imagenes').innerHTML += `
-        			<div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
+        			<div class="col-md-4 col-lg-3 col-sm-6 col-xs-6">
                         <div class="item">
                             <span class="icono"><i class="fas fa-images"></i></span>
                             <span class="icono"><i class="fas fa-trash-alt"></i></span>
@@ -65,7 +63,7 @@ function mostrarArchivos(){
 		document.getElementById('imagenes').innerHTML = ' ';
 		for (let i = 0; i < 4; i++) {
 		document.getElementById('imagenes').innerHTML += `
-        			<div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
+        			<div class="col-md-4 col-lg-3 col-sm-6 col-xs-6">
                         <div class="item">
                             <span class="icono"><i class="fas fa-images"></i></span>
                             <span class="icono"><i class="fas fa-trash-alt"></i></span>
@@ -83,7 +81,7 @@ function mostrarArchivos(){
 		document.getElementById('imagenes').innerHTML = ' ';
 		for (let i = 0; i < videos.length; i++) {
 		document.getElementById('imagenes').innerHTML += `
-        			<div class="col-md-3 col-lg-3 col-sm-6 col-xs-6">
+        			<div class="col-md-4 col-lg-3 col-sm-6 col-xs-6">
                         <div class="item">
                             <span class="icono"><i class="fas fa-video"></i></span>
                             <span class="icono"><i class="fas fa-trash-alt"></i></span>

@@ -65,13 +65,13 @@
 }
 
 a {
-  color: black;
+  color: white;
   text-decoration: none;
   background-color: transparent;
 }
 
 a:hover {
-  color: black;
+  color: white;
   text-decoration: none;
   background-color: transparent;
 }
@@ -111,3 +111,28 @@ a:hover {
 .dropdown-item{
   color: rgb(255,192,1);
 }
+
+.enlaces{
+  background-color: transparent;
+  border:transparent;
+  margin-left: 20px;
+  color: white;
+  font-size: 15px;
+}
+
+.iconos-enlaces{
+  background-color: transparent;
+  color: rgb(255,192,1);
+  font-size: 20px;
+}
+
+hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    border-top: 1px solid gray;
+    width: 75%;
+}
+
+
+

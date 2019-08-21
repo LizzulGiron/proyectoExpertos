@@ -1,0 +1,44 @@
+(function(){
+	var usuarios = [
+    {nombre:"Tiger",apellido:"Nixon",correo:"tiger@gmail.com",contrasenia:"admin.456",tipoUsuario:"Administrador",suscripcion:"Gratis"},
+    {nombre:"Garrett",apellido:"Winters",correo:"garrett@yahoo.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Básico"},
+    {nombre:"Ashton",apellido:"Cox",correo:"cox@gmail.com",contrasenia:"cox.456",tipoUsuario:"Registrado",suscripcion:"Básica"},
+    {nombre:"Cedric",apellido:"Kelly",correo:"cedric123@yahoo.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Gratis"},
+    {nombre:"Airi",apellido:"Satou",correo:"airi@gmail.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Gratis"},
+    {nombre:"Brielle",apellido:"Williamson",correo:"brielle@gmail.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Básica"},
+    {nombre:"Herrod",apellido:"Chandler",correo:"herrod@gmail.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Premium"},
+    {nombre:"Rhona",apellido:"Davidson",correo:"davidson@gmail.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Gratis"},
+    {nombre:"Colleen",apellido:"Hurst",correo:"hurst@gmail.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Premium"},
+    {nombre:"Sonya",apellido:"Frost",correo:"frost@yahoo.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Gratis"},
+    {nombre:"Jena",apellido:"Gaines",correo:"jena@yahoo.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Gratis"},
+    {nombre:"Quinn",apellido:"Flynn",correo:"flynn@yahoo.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Básica"},
+    {nombre:"Charde",apellido:"Marshall",correo:"charde@yahoo.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Gratis"},
+    {nombre:"Haley",apellido:"Kennedy",correo:"kennedy@yahoo.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Premium"},
+    {nombre:"Tatyana",apellido:"Fitzpatrick",correo:"taty@yahoo.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Gratis"},
+    {nombre:"Michael",apellido:"Silva",correo:"michael@yahoo.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Básica"},
+    {nombre:"Paul",apellido:"Byrd",correo:"paul@yahoo.com",contrasenia:"Gloria",tipoUsuario:"Registrado",suscripcion:"Gratis"},
+    {nombre:"Gloria",apellido:"Little",correo:"Gloria@yahoo.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Gratis"},
+    {nombre:"Bradley",apellido:"Greer",correo:"brad@yahoo.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Gratis"},
+    {nombre:"Dai",apellido:"Rios",correo:"dai@yahoo.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Gratis"},
+    {nombre:"Jenette",apellido:"Caldwell",correo:"caldwell@yahoo.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Gratis"},
+    {nombre:"Yuri",apellido:"Berry",correo:"yuri@yahoo.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Básica"},
+    {nombre:"Caesar",apellido:"Vance",correo:"caesar@yahoo.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Básica"},
+    {nombre:"Doris",apellido:"Wilder",correo:"wilder@yahoo.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Básica"},
+    {nombre:"Angelica",apellido:"Ramos",correo:"angelica@yahoo.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Gratis"},
+    {nombre:"Gavin",apellido:"Joyce",correo:"gavin@yahoo.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Gratis"},
+    {nombre:"Jennifer",apellido:"Chang",correo:"chang@gmail.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Premium"},
+    {nombre:"Brenden",apellido:"Wagner",correo:"wagner@gmail.com",contrasenia:"asd.456",tipoUsuario:"Registrado",suscripcion:"Premium"},
+    {nombre:"Fiona",apellido:"Green",correo:"grenn@gmail.com",contrasenia:"asd.456",tipoUsuario:"registrado",suscripcion:"Gratis"}
+	];
+    for (var i = 0; i < usuarios.length; i++) {
+        document.getElementById('tbl-usuarios').innerHTML += `
+            <tr>
+                <td>${usuarios[i].nombre}</td>
+                <td>${usuarios[i].apellido}</td>
+                <td>${usuarios[i].correo}</td>
+                <td>${usuarios[i].contrasenia}</td>
+                <td>${usuarios[i].tipoUsuario}</td>
+                <td>${usuarios[i].suscripcion}</td>
+            </tr>`;
+    }
+})();

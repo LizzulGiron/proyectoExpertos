@@ -1,0 +1,143 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Categorías | Keoki</title>
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="css/bootstrap1.min.css">
+        <link rel="stylesheet" href="css/owl-carousel.css">
+        <link rel="stylesheet" href="css/templatemo-style.css">
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+        <link rel="stylesheet" href="CSS/fontawesome.min.css" />
+        <link rel="stylesheet" href="CSS/brands.min.css">
+        <link rel="stylesheet" href="CSS/solid.min.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.18/datatables.min.css"/>
+ 
+    </head>
+
+<body>
+        <header class="nav-down responsive-nav hidden-lg hidden-md">
+            <button type="button" id="nav-toggle" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <!--/.navbar-header-->
+            <div id="main-nav" class="collapse navbar-collapse">
+                <nav>
+                    <ul class="nav navbar-nav">
+                        <li><a href="home.html">Mis sitios</a></li>
+                        <hr>
+                        <li><a href="#negocios">Negocio</a></li>
+                        <li><a href="#tienda">Tienda en línea</a></li>
+                        <li><a href="#fotografia">Fotografía</a></li>
+                        <li><a href="#musica">Música</a></li>
+                        <li><a href="#video">Vídeo</a></li>
+                        <li><a href="#disenio">Diseño</a></li>
+                        <li><a href="#eventos">Eventos</a></li>
+                        <li><a href="#viaje">Viajes</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <div class="sidebar-navigation hidde-sm hidden-xs">
+            <div class="logo">
+                <a href="index.html"><img src="img/keoki6.svg" class="logotipo"></a>
+            </div>
+            <nav style="margin-top: 50px">
+                <div class="row">
+                    <button class="enlaces">
+                        <a href="">
+                            <span class="iconos-enlaces">
+                                <i class="fas fa-users"></i>
+                            </span>
+                            Usuarios
+                        </a>
+                    </button>
+                    <hr>
+                </div>
+                <div class="row">
+                    <button class="enlaces">
+                        <a href="sitioWeb.html">
+                            <span class="iconos-enlaces">
+                                <i class="fas fa-pencil-alt"></i>
+                            </span>
+                            Sitio web
+                        </a>
+                    </button>
+                    <hr>
+                </div>
+                <div class="row">
+                    <button class="enlaces">
+                        <a href="admin.html">
+                            <span class="iconos-enlaces">
+                                <i class="fas fa-paint-brush"></i>
+                            </span>
+                            Diseño
+                        </a>
+                    </button>
+                    <hr>
+                </div>
+                
+            </nav>
+        </div>
+        <div id="projects" class="page-content" style="margin-top: 20px">
+            <div class="section-heading" style="margin-top: 20px;margin-bottom: 5px">
+                    <h1 class="tituloMediano">Administración <br><em>de usuarios</em></h1>
+                    <p >Qué deseas hacer hoy?. 
+                    <br>Elige una de nuestras plantillas.</p>
+            </div>
+            <table id="example" class="display table table-striped table-dark" style="width:100%">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Apellido</th>
+                        <th>Correo</th>
+                        <th>Contraseña</th>
+                        <th>Tipo usuario</th>
+                        <th>Suscripción</th>
+                    </tr>
+                </thead>
+                <tbody id="tbl-usuarios"></tbody>
+                <tfoot></tfoot>
+            </table>
+            
+
+
+
+
+
+
+        </div>
+        <div id="blog" class="page-content">
+            <section class="footer">
+                <p>Copyright &copy; 2019. Design: Keoki.</p>
+            </section>
+        </div>
+
+
+
+    <script src="JS/jquery-3.2.1.min.js"></script>
+    <script>
+        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
+    </script>
+    <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="JS/fontawesome.min.js"></script>
+    <script src="JS/jquery.dataTables.min.js"></script>
+    <script src="JS/administracion.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('#example').DataTable();
+        });
+    </script>
+
+</body>
+</html>
