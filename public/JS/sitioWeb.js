@@ -5,7 +5,7 @@
         {codigo:"archivos",titulo:"Archivos"},
         {codigo:"paginaPrincipal",titulo:"Página principal"},
         {codigo:"crearPagina",titulo:"Páginas"},
-        {codigo:"entradas",titulo:"Entradas"},
+        {codigo:"blog",titulo:"Entradas"},
         {codigo:"comentarios",titulo:"Comentarios"}
     ];
     console.log(categorias);

@@ -728,11 +728,7 @@ header {
 
 /* Blog Style */
 
-#blog {
-  padding-left: 60px;
-  padding-right: 60px;
-  padding-bottom: 80px;
-}
+
 
 #blog .tabs {
   list-style: none;
@@ -799,9 +795,9 @@ header {
 #blog .tabgroup ul li {
   display: inline-block;
   text-align: left;
-  margin-bottom: 10px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #ddd;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border-bottom: 0px solid #ddd;
 }
 
 #blog .tabgroup ul li:last-child {
@@ -1106,3 +1102,52 @@ header {
   border-radius: 5px 5px 0px 0px;
 }
 
+#header {
+  margin:auto;
+  width:100px;
+}
+      
+#header ul, ol {
+   list-style:none;
+   width: 100%;
+}
+
+#header .nav > li {
+   float:left;
+}
+      
+#header .nav li a {
+  color:black;
+  text-decoration:none;
+  display:block;
+  padding: 0px;
+}
+      
+#header .nav li a:hover {
+   background-color:#434343;
+}
+      
+#header .nav li ul {
+  display:none;
+  position:absolute;
+  min-width:140px;
+}
+      
+#header .nav li:hover > ul {
+  display:block;
+}
+
+#header .nav li ul li {
+  position:relative;
+}
+
+#header .nav li ul li ul {
+  right:-140px;
+  top:0px;
+}
+
+.cuadro{
+  border-radius: 5px;
+  background-color: #f4f4f4;
+  border: 1px solid black;
+}
