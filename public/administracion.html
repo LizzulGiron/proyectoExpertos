@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Categorías | Keoki</title>
+        <title>Administración | Keoki</title>
         <link rel="shortcut icon" href="img/favicon.ico">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
@@ -31,18 +31,7 @@
             <!--/.navbar-header-->
             <div id="main-nav" class="collapse navbar-collapse">
                 <nav>
-                    <ul class="nav navbar-nav">
-                        <li><a href="home.html">Mis sitios</a></li>
-                        <hr>
-                        <li><a href="#negocios">Negocio</a></li>
-                        <li><a href="#tienda">Tienda en línea</a></li>
-                        <li><a href="#fotografia">Fotografía</a></li>
-                        <li><a href="#musica">Música</a></li>
-                        <li><a href="#video">Vídeo</a></li>
-                        <li><a href="#disenio">Diseño</a></li>
-                        <li><a href="#eventos">Eventos</a></li>
-                        <li><a href="#viaje">Viajes</a></li>
-                    </ul>
+                    <ul class="nav navbar-nav" id="enlaces-collapse"></ul>
                 </nav>
             </div>
         </header>
@@ -52,45 +41,21 @@
                 <a href="index.html"><img src="img/keoki6.svg" class="logotipo"></a>
             </div>
             <nav style="margin-top: 50px">
-                <div class="row">
-                    <button class="enlaces">
-                        <a href="">
-                            <span class="iconos-enlaces">
-                                <i class="fas fa-users"></i>
-                            </span>
-                            Usuarios
-                        </a>
-                    </button>
-                    <hr>
-                </div>
-                <div class="row">
-                    <button class="enlaces">
-                        <a href="sitioWeb.html">
-                            <span class="iconos-enlaces">
-                                <i class="fas fa-pencil-alt"></i>
-                            </span>
-                            Sitio web
-                        </a>
-                    </button>
-                    <hr>
-                </div>
-                <div class="row">
-                    <button class="enlaces">
-                        <a href="admin.html">
-                            <span class="iconos-enlaces">
-                                <i class="fas fa-paint-brush"></i>
-                            </span>
-                            Diseño
-                        </a>
-                    </button>
-                    <hr>
-                </div>
-                
+                <ul>
+                    <li id="usuarios"></li>
+                    <li id="configuracion"></li>
+                    <li id="diseño"></li>
+                </ul>                
             </nav>
         </div>
-        <div id="projects" class="page-content" style="margin-top: 20px">
-            <div class="section-heading" style="margin-top: 20px;margin-bottom: 5px">
-                    <h1 class="tituloMediano">Administración <br><em>de usuarios</em></h1>
+
+
+        <div id="projects" class="page-content">
+            <div class="section-heading encabezado">
+                    <h1 class="tituloMediano">Administración <br><em>del sitio web</em></h1>
+            </div>
+            <div class="section-heading encabezado-seccion">
+                <h1><br><em>Usuarios</em></h1><br>
             </div>
             <table id="example" class="display table table-striped table-dark" style="width:100%">
                 <thead class="thead-dark">
@@ -123,14 +88,11 @@
 
 
     <script src="JS/jquery-3.2.1.min.js"></script>
-    <script>
-        window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')
-    </script>
     <script src="js/vendor/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
     <script src="JS/fontawesome.min.js"></script>
     <script src="JS/jquery.dataTables.min.js"></script>
     <script src="JS/administracion.js"></script>
+    <script src="JS/barraNavegacion.js"></script>
     <script>
         $(document).ready(function() {
             $('#example').DataTable();

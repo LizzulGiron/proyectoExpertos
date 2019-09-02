@@ -122,9 +122,7 @@
 
             <section id="blog" class="content-section">
                 <div class="section-heading">
-                    <h1>Blog<br><em>Entries</em></h1>
-                    <p>Curabitur hendrerit mauris mollis ipsum vulputate rutrum. 
-                    <br>Phasellus luctus odio eget dui imperdiet.</p>
+                    <h1>Tús<br><em>Entradas</em></h1><br>
                 </div>
                 <div class="section-content">
                     <div class="tabs-content">
@@ -136,6 +134,16 @@
                             <section id="first-tab-group" class="tabgroup">
                                 <div id="tab1">
                                     <div class="container-fluid">
+                                        <div class="row" style="border-bottom:1px solid black;">
+                                            <div class="col-xs-9 col-md-9 col-lg-9">
+                                                <div style="text-align: left">
+                                                    Entradas
+                                                </div>
+                                            </div>
+                                            <div class="col-xs-3 col-md-3 col-lg-3">
+                                                <button>Nueva entrada</button>
+                                            </div>
+                                        </div><br>
                                         <div class="row">
                                             <div class="col-xs-9 col-md-9 col-lg-9">
                                                 <div style="text-align: left">
@@ -144,33 +152,21 @@
                                                 </div>
                                             </div>
                                             <div class="col-xs-3 col-md-3 col-lg-3">
-                                                <div id="header">
-                                                    <ul class="nav">
-                                                        <li><i class="fas fa-ellipsis-h"></i></a>
-                                                            <ul class="cuadro">
-                                                                <li>
-                                                                    <a href="">Editar</a>
-                                                                </li><br>
-                                                                <li><a href="">Ver</a></li><br>
-                                                                <li><a href="">Comentarios</a></li><br>
-                                                                <li><a href="">Copiar</a></li><br>
-                                                                <li><a href="">Eliminar</a></li>
-                                                            </ul>
-                                                        </li>
-                                                    </ul>
-                                                </div>
+                                                Opciones
                                             </div>
                                         </div>
                                         
                                     </div>
                                     
                                 </div>
-                                <div id="tab2"></div>
+                                <div id="tab2">
+                                    
+                                </div>
                             </section> 
                         </div>
                     </div>
                 </div>
-            </section>
+            </section><br><br><br><br><br><br><br><br><br><br>
 
             <section id="comentarios" class="content-section">
                 <h1>Gestion de comentarios</h1>
@@ -206,42 +202,18 @@
 
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script src="JS/jquery-3.2.1.min.js"></script>
+    
 
     <script src="js/vendor/bootstrap.min.js"></script>
+    <script src="js/jquery.dlmenu.js"></script>
+    <script src="js/modernizr.custom.js"></script>
     
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
 
-    <script>
-        var didScroll;
-        var lastScrollTop = 0;
-        var delta = 5;
-        var navbarHeight = $('header').outerHeight();
-        $(window).scroll(function(event){didScroll = true;});
-
-        setInterval(function() {
-            if (didScroll) {
-                hasScrolled();
-                didScroll = false;
-            }
-        }, 250);
-
-        function hasScrolled() {
-            var st = $(this).scrollTop();
-            if(Math.abs(lastScrollTop - st) <= delta)
-                return;
-            if (st > lastScrollTop && st > navbarHeight){
-                $('header').removeClass('nav-down').addClass('nav-up');
-            } else {
-                if(st + $(window).height() < $(document).height()) {
-                    $('header').removeClass('nav-up').addClass('nav-down');
-                }
-            }
-            
-            lastScrollTop = st;
-        }
+    <script src="js/barraNavegacion.js">
+        
     </script>
     <script>
         $(document).ready(function() {
@@ -249,7 +221,9 @@
         });
     </script>
 
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js" type="text/javascript"></script>
+
+    
+
     <script src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
     <script src="JS/sitioWeb.js"></script>
     <script type="text/javascript" src="JS/fontawesome.min.js"></script>
