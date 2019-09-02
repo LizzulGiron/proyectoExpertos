@@ -181,3 +181,8 @@ hr {
   background-color: black;
   color: rgb(255,192,1);
  }
+
+.iconos{
+  font-size: 150px;
+  color: rgba(102, 102, 102,.5);
+}
