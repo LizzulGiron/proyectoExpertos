@@ -39,7 +39,7 @@
             <div class="logo">
                 <a href="index.html"><img src="img/keoki6.svg" class="logotipo"></a>
             </div>
-            <nav style="margin-top: 50px">
+            <nav style="margin-top: 30px">
                 <ul>
                     <li id="usuarios"></li>
                     <li id="configuracion"></li>
@@ -114,6 +114,7 @@
                                 </div>
                                 <div id="tab3">
                                     <textarea cols="80" id="editor1" name="editor1" rows="10" data-sample-short></textarea>
+                                    <button type="button" onclick="mostrarContenido()">Mostrar información</button>
                                 </div>
                             </section> 
                         </div>
@@ -146,6 +147,10 @@
         CKEDITOR.replace('editor1',{
             uiColor:''
         });
+
+        function mostrarContenido(){
+            console.log(CKEDITOR.instances["editor1"].getData());
+        }
     </script>
 
 </body>

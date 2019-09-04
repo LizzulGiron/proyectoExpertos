@@ -16,7 +16,7 @@
             <span class="iconos-enlaces">
                 <i class="fas fa-users"></i>
             </span>
-            Usuarios
+            <span class="colorNaranja">Usuarios</span>
         </a>
         <li id="lista-usuarios"></li>`;
     document.getElementById('configuracion').innerHTML = `
@@ -24,7 +24,7 @@
             <span class="iconos-enlaces">
                 <i class="fas fa-pencil-alt"></i>
             </span>
-            Configuración
+            <span class="colorNaranja">Configuración</span>
         </a>
         <li id="lista-configuracion"></li>`;
     document.getElementById('diseño').innerHTML = `
@@ -32,7 +32,7 @@
             <span class="iconos-enlaces">
                 <i class="fas fa-paint-brush"></i>
             </span>
-            Diseño
+            <span class="colorNaranja">Diseño</span>
         </a>
         <li id="lista-diseño"></li>`;
 
@@ -46,4 +46,6 @@
         document.getElementById('enlaces-collapse').innerHTML += `
             <li><a href="${enlaces[i].url}">${enlaces[i].descripcion}</a></li>`;
     }
+    document.getElementById('usuarios').innerHTML += `<hr>`;
+    document.getElementById('configuracion').innerHTML += `<hr>`;
 })();

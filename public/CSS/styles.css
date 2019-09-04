@@ -121,9 +121,10 @@ a:hover {
 
 .iconos-enlaces{
   background-color: transparent;
-  color: rgb(255,192,1);
+  color: rgba(102, 102, 102,.5);
   font-size: 20px;
-  margin-left: -10px;
+  margin-left: 0px;
+  margin-right: 20px;
 }
 
 hr {
@@ -131,7 +132,7 @@ hr {
     margin-bottom: 5px;
     border: 0;
     border-top: 1px solid gray;
-    width: 75%;
+    width: 100%;
 }
 
 .bordes{
